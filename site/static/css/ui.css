@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(30, 42, 82);
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(22, 28, 47);
+    width: 100vw;
+
+    padding: 1vh;
+
+    color: white;
+}
+header div {
+    text-align: center;
+}
+
+
+#app pre {
+/*    text-align: center;*/
+    font-size:  3vh;
+}

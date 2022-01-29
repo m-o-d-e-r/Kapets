@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+      
+        <link href="@@ url_for('static', filename = 'css/ui.css') @@" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1>@@ data.welcome @@</h1>
+            </div>
+        </header>
+
+        <div id="app">
+            <pre>
+                @@ data.stories.o1 @@
+            </pre>
+
+            {{story}}
+        </div>
+    </body>
+    
+    <script type="text/javascript" src="@@ url_for('static', filename = 'js/main.js') @@"></script>
+
+</html>
