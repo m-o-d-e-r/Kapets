@@ -583,7 +583,7 @@ class Bos(metaclass = BasePropertyMetaClass):
         self.x = x
         self.y = y
 
-        self.XP = 3
+        self.XP = 1_000
 
         self.timer = timer
 

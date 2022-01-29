@@ -160,7 +160,6 @@ class GameGeneralEvents:
 
 
             if (event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == 27)):
-                print(11)
                 Components.clear()
                 Components.init()
 
@@ -727,12 +726,12 @@ class MainCycle:
                     )
                     for num, enemy in enumerate(MainCycle.ENEMIS):
 
-                        if not FeaturesOfBoss.ENEMIES_NOT_SPAWNED:
-                            enemy.draw(self.window)
+#                        if not FeaturesOfBoss.ENEMIES_NOT_SPAWNED:
+                        enemy.draw(self.window)
 
-                            if not MainCycle.BOS.IS_DIE:
-                                if not MainCycle.PLAYER.teleport_procces:
-                                    MainCore.enemies_colizion_with_player(pl, enemy, num)
+                        if not MainCycle.BOS.IS_DIE:
+                            if not MainCycle.PLAYER.teleport_procces:
+                                MainCore.enemies_colizion_with_player(pl, enemy, num)
 
 
                     MainCycle.BOS.draw(
